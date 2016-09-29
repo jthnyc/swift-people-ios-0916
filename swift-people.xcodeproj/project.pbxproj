@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01AB40C41885369DB796E89E /* Pods_swift_peopleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515194AADCA86F28C7467BA3 /* Pods_swift_peopleTests.framework */; };
+		01DF774C1D9D854700AC9B3C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DF774B1D9D854700AC9B3C /* Person.swift */; };
 		4DEE92601BFBDA3700132675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE925F1BFBDA3700132675 /* AppDelegate.swift */; };
 		4DEE92621BFBDA3700132675 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE92611BFBDA3700132675 /* ViewController.swift */; };
 		4DEE92651BFBDA3700132675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEE92631BFBDA3700132675 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01DF774B1D9D854700AC9B3C /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4DEE925C1BFBDA3700132675 /* swift-people.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-people.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEE925F1BFBDA3700132675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DEE92611BFBDA3700132675 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				4DEE925F1BFBDA3700132675 /* AppDelegate.swift */,
 				4DEE92821BFCD27D00132675 /* Int+Ordinal.swift */,
+				01DF774B1D9D854700AC9B3C /* Person.swift */,
 				4DEE927F1BFCCC5000132675 /* Resources */,
 			);
 			path = "swift-people";
@@ -196,7 +199,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Flatiron School";
 				TargetAttributes = {
 					4DEE925B1BFBDA3700132675 = {
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DF774C1D9D854700AC9B3C /* Person.swift in Sources */,
 				4DEE92621BFBDA3700132675 /* ViewController.swift in Sources */,
 				4DEE92601BFBDA3700132675 /* AppDelegate.swift in Sources */,
 				4DEE92831BFCD27D00132675 /* Int+Ordinal.swift in Sources */,
@@ -406,8 +410,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -450,8 +456,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -470,6 +478,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -504,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D0C9F53A20561BF452AFEE5 /* Pods-swift-peopleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "swift-peopleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -518,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D852823F3C3F11E3AF06174 /* Pods-swift-peopleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "swift-peopleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
